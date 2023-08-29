@@ -9,15 +9,15 @@
  *	4) Recitify Errors
  *	5) Exit Appropriately
  */
- 
- /*
-  * Driver Function
-  * Launches program and runs appropriate format of program
-  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include "config.c"
+
+ /*
+  * Driver Function
+  * Launches program and runs appropriate format of program
+  */
 int main(int argc, int *args[]) {
 	if (
