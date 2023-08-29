@@ -3,9 +3,17 @@ config:
 configtest:
 	gcc -Wall -Werror -std=c11 -o config config.c
 driver:
-	gcc -Wall -Werror -std=c11 -o storageManager driver.c 
-clean:
+	config
+	gcc -Wall -Werror -std=c11 -o storageManager driver.c
+cleanConfig:
 	rm rsc/config.csv
 	rm config
 	rm config.o
 	rm storageManager
+cleanDriver:
+	rm cleanConfig
+	rm storageManager
+clean:
+	cleanConfig
+	cleanDriver
+	
