@@ -14,6 +14,8 @@ Requirements
 	- Projected Revenue for
 		+ Entire Facility
 		+ Range of Units
+
+  
 Behavior
 	1) If config file does not exist, create config file
 		+ Creating COnfig File
@@ -34,7 +36,6 @@ Behavior
 				e) Date of Occupation
 				f) Experation of Contract
 				g) etc
-			
 	2) Read config file
 	3) Follow config file rules
 	4) ask for query
