@@ -23,6 +23,10 @@
 #include "config.c"
 
 /*
+ *
+ */
+
+/*
  * Runs the program
  */
 int run(char* config_path, char* database_path) {
@@ -38,13 +42,13 @@ int main(int argc, int *args[]) {
 	// Config provided
 	if (argc >= 2) {
 		char* config_path = args[1];
-	// Config and database provided
 	} else {
 		char* config_path = "rsc/config.csv";
 	}
+	// Config and database provided
 	if (argc == 3) {
 		char* database_path = args[2];
-	} 	else {
+	} else {
 		char* database_path = "rsc/database";
 	}
 	return run(config_path, database_path);

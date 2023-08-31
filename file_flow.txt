@@ -1,0 +1,25 @@
+Program Flow, Dependencies, And File Purposes
+
+config.c
+	Dependencies
+		None
+	Purpose
+		1) Create Config file in "rsc/"
+		2) Access Config File for reading
+		3) Modify Config File as needed
+database.c
+	Dependencies
+		None
+	Purpose
+		1) Create/Read/Modify Databases saved in "/rsc"
+driver.c
+	Dependencied
+		config.c
+		rsc/config.csv
+		database.c
+	Purpose
+		Perform tasks as requested by the User
+			1) Read/Write "rsc/config.csv" through config.c
+			2) Read and Write to databases
+launcher.c
+	dependant on all other files
