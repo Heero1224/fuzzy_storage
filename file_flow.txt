@@ -22,4 +22,17 @@ driver.c
 			1) Read/Write "rsc/config.csv" through config.c
 			2) Read and Write to databases
 launcher.c
-	dependant on all other files
+	Dependencies
+		config.c
+		database.c
+	Purpose
+		1) Start Program at Main Menu
+		2) Main Menu
+			New
+				Create New Facility Database
+			Open
+				Modify an Existing Database
+			Options
+				Modify Config File
+			Exit
+				Exit the Program
